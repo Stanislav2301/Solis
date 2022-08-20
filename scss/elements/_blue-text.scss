@@ -1,0 +1,6 @@
+@use '../variables/variables' as*;
+
+.blue-text {
+    font-style: italic;
+    color: $span-color;
+}

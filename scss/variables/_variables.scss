@@ -1,0 +1,32 @@
+
+/**********FONTS***********/
+
+$font-primary: 'Lato';
+$font-secondary: 'Playfair Display';
+$font-size-primary: 18px;
+$line-height-primary: 144%;
+
+/*********COLORS**********/
+
+$white-default: #FFFFFF;
+$bg-color: #161926;
+$border-color: #515773;
+$btn-color: #53F3CD;
+$span-color: #689FF2;
+$btn-hover-color: #02E0AB;
+
+/*********WIDTH**********/
+
+$content-width: 1170px;
+
+/*********BREAKPOINTS*********/
+
+$sm: 424.98px;
+$xs: 374.98px;
+$md: 767.98px;
+$md-lg: 1200px;
+$lg: 1439.98px;
+$xs-plus: $xs+1;
+$sm-plus: $sm+1;
+$md-plus: $md+1;
+$lg-plus: $lg+1;

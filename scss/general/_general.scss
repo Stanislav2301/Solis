@@ -1,0 +1,30 @@
+@use '../variables/variables' as*;
+@import '../mixins/mixins';
+body {
+    font-family: $font-primary;
+    font-size: $font-size-primary;
+    color: $white-default;
+    font-weight: 300;
+    background-color: $bg-color;
+    background-image: linear-gradient(183.11deg, rgba(22, 25, 38, 0) 46.73%, $bg-color 63.21%), url(../img/First-Screen-Bg-Image.png);
+    background-repeat: no-repeat;
+    background-size: auto;
+    padding: 30px 0;
+    width: 100%;
+
+    @include media-min($lg-plus) {
+        background-size: cover;
+        height: 0;
+        padding-bottom: 80%;
+    }
+}
+
+.container {
+    max-width: $content-width;
+    width: 100%;
+    margin: 0 auto;
+
+    @include media-max($lg) {
+        padding: 0 15px;
+    }
+}

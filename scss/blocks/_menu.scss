@@ -1,0 +1,41 @@
+@use '../variables/variables' as*;
+@import '../mixins/mixins';
+.menu {
+
+    &__list {
+        display: flex;
+        gap: 30px;
+        flex-wrap: wrap;
+
+        @include media-max($md) { 
+            gap: 10px;
+            margin-left: 30px;
+        }
+    }
+
+    &__link{
+        
+        position: relative;
+
+        @include media-max($md) {
+            font-size: 18px;
+        }
+
+            &::after {
+                content: '';
+                position: absolute;
+                background: linear-gradient(96.73deg, $btn-color 6.73%, rgba(83, 243, 205, 0) 116.9%);
+                opacity: 0;
+                height: 3px;
+                width: 100%;
+                top: 100%;
+                left: 0;
+                transition: opacity 0.5s linear;
+            }
+        &:hover {
+            &::after {
+                opacity: 0.3;
+            }
+        }
+    }
+}

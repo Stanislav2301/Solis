@@ -1,0 +1,22 @@
+@use '../variables/variables' as*;
+@import '../mixins/mixins';
+.benefits {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 570px));
+    grid-auto-rows: minmax(280px,1fr);
+    column-gap: 30px;
+    row-gap: 60px;
+
+    @include media-max ($lg) {
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    }
+
+    &__item {
+        padding: 50px 35px 20px;
+        border-top: 1px solid $border-color;
+    }
+
+    &__description {
+        margin-top: 30px;
+    }
+}

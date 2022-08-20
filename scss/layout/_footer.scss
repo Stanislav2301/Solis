@@ -1,0 +1,22 @@
+@use '../variables/variables' as*;
+@import '../mixins/mixins';
+
+.footer {
+    min-height: 86px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 100px;
+    border-top: 1px solid $border-color;
+
+    @include media-max($md) {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    &__link {
+        &:hover {
+            color: $btn-hover-color;
+        }
+    }
+}

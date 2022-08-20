@@ -1,0 +1,68 @@
+@use '../variables/variables' as*;
+@import '../mixins/mixins';
+
+.reviews-section {
+
+    &__header {
+        max-width: 400px;
+        width: 100%;
+
+        @include media-max($md-plus) {
+            max-width: unset;
+        }
+    }
+
+    &__description {
+        margin-top: -6px;
+    }
+
+    &__items {
+        display: flex;
+        gap: 30px;
+        margin-top: 50px;
+        flex-wrap: wrap;
+    }
+
+    &__item {
+        max-width: 370px;
+        width: 100%;
+        padding: 30px 40px;
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+
+        @include media-max($md-plus) {
+            max-width: unset;
+        }
+
+        &--burge {
+            background-image: url(../img/burge-review-bg.png);
+        }
+
+        &--prosse {
+            background-image: url(../img/prosse-review-bg.png);
+        }
+
+        &--mooney {
+            background-image: url(../img/mooney-review-bg.png);
+        }
+    }
+
+    &__review {
+        font-size: 16px;
+        line-height: 162%;
+        font-weight: 400;
+        opacity: 0.8;
+        flex: 1 1 auto;
+    }
+
+    &__caption {
+        font-family: $font-secondary;
+        font-style: italic;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 100%;
+        letter-spacing: 0.08em;
+        margin-top: 26px;
+    }
+}

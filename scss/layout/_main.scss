@@ -1,0 +1,12 @@
+@use '../variables/variables' as*;
+@import '../mixins/mixins';
+
+.main-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 120px;
+
+    @include media-max($sm-plus) {
+        gap: 60px;
+    }
+}
